@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reporte</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="qr-code-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+	<div class="ion-padding">
+		<ion-item>
+			<ion-label position="stacket">
+				Temperatura:
+			</ion-label>
+			<ion-input type="number" placeholder="Ingrese en °C" [(ngModel)]="reporte.temperatura"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacket">
+				Dificultad para respirar:
+			</ion-label>
+			<ion-toggle mode="ios" [(ngModel)]="reporte.disnea"></ion-toggle>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacket">
+				Cansancio:
+			</ion-label>
+			<ion-toggle mode="ios" [(ngModel)]="reporte.cansancio"></ion-toggle>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacket">
+				Dolor de Cabeza:
+			</ion-label>
+			<ion-toggle mode="ios" [(ngModel)]="reporte.dolor_de_cabeza"></ion-toggle>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacket">
+				Congestion Nasal:
+			</ion-label>
+			<ion-toggle mode="ios" [(ngModel)]="reporte.congestion"></ion-toggle>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacket">
+				Diarrea:
+			</ion-label>
+			<ion-toggle mode="ios" [(ngModel)]="reporte.diarrea"></ion-toggle>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacket">
+				Dolor de Garganta:
+			</ion-label>
+			<ion-toggle mode="ios" [(ngModel)]="reporte.dolor_de_garganta"></ion-toggle>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacket">
+				Observaciones:
+			</ion-label>
+			<ion-textarea [(ngModel)]="reporte.observaciones"></ion-textarea>
+		</ion-item>
+	</div>
+</ion-content>
+<ion-footer>
+	<ion-toolbar>
+		<ion-button color="success" expand="block" (click)="enviar()">Guardar</ion-button>
+	</ion-toolbar>
+</ion-footer>

@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="text-align: center;">
+	<div class="ion-padding">
+		<img src="https://qrcodechimp.s3.amazonaws.com/blog/wp-content/uploads/2019/12/feature-image.jpg" style="width: 80%"/>
+	<h2>La nación te agradece tu gran esfuerzo en la lucha contra el COVID-19</h2>
+	<p>Escanea el código QR del paciente para obtener su expediente medico y realizar reportes de su estado de salud.</p>
+	</div>
+</ion-content>
+<ion-footer>
+	<ion-toolbar>
+		<ion-button color="primary" expand="block" (click)="scanQR()">Comenzar</ion-button>
+	</ion-toolbar>
+</ion-footer>

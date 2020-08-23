@@ -1,0 +1,25 @@
+<ion-content color="gob">
+  <div class="ion-padding">
+
+  		<div style="text-align: center;">
+  			<img src="assets/banner-covid-19v5.png" alt="" srcset="">
+  		</div>
+      
+      
+      <h1 class="titulo">Seguimiento<br>COVID-19</h1>
+
+        <ion-label position="stacked">Correo Electronico</ion-label>
+        <ion-input class="ion-border" [(ngModel)]="postData.correo" placeholder="Ingrese su dirección correo"></ion-input>
+      
+          <ion-label>Código de Acceso</ion-label>
+          <ion-input class="ion-border" [(ngModel)]="postData.codigo" placeholder="Ingrese su código de acceso"></ion-input>
+          
+          <br>
+
+          <ion-button color="light" (click)="ingresar()" expand="block">
+            Ingresar
+          </ion-button>
+
+  </div>
+  
+</ion-content>
